@@ -7,7 +7,9 @@ defmodule WxUtils.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps,
+     description: description,
+     package: package]
   end
 
 
@@ -19,13 +21,13 @@ defmodule WxUtils.Mixfile do
   defp deps do
     []
   end
-  
+
   defp description do
     """
     All of the erlang wx macros exposed as normal functions.
     """
   end
-  
+
   defp package do
     [
      name: :wx_utils,
