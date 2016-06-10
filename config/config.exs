@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :wx_utils, key: :value
+#     config :gl_utils, key: :value
 #
 # And access this configuration in your application as:
 #
-#     Application.get_env(:wx_utils, :key)
+#     Application.get_env(:gl_utils, :key)
 #
 # Or configure a 3rd-party app:
 #

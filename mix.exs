@@ -1,41 +1,23 @@
-defmodule WxUtils.Mixfile do
+defmodule GlUtils.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :wx_utils,
-     version: "0.0.2",
+    [app: :gl_utils,
+     version: "0.0.1",
      elixir: "~> 1.2",
-     description: description,
-     package: package,
+     description: "All of the Erlang gl macros exposed as normal functions",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps,
-     description: description,
+     deps: [],
      package: package]
   end
 
-
-  def application do
-    [applications: [:logger]]
-  end
-
-
-  defp deps do
-    []
-  end
-
-  defp description do
-    """
-    All of the erlang wx macros exposed as normal functions.
-    """
-  end
-
+  def application, do: [applications: []]
   defp package do
-    [
-     name: :wx_utils,
-     files: ["lib", "src", "mix.exs", "README*", "LICENSE*"],
-     maintainers: ["Sam Schneider"],
+    [name: :gl_utils,
+     files: ["src", "mix.exs", "README*", "LICENSE*"],
+     maintainers: ["Michael Prins"],
      licenses: ["MIT"],
-     links: %{"GitHub" => "https://github.com/sschneider1207/wx_utils"}]
+     links: %{"GitHub" => "https://github.com/requnix/gl_utils"}]
   end
 end

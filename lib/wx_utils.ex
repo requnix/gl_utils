@@ -1,2 +1,0 @@
-defmodule WxUtils do
-end
